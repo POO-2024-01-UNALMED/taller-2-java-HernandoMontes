@@ -1,11 +1,11 @@
 package test;
 
 public class Asiento {
-	public String color;
-	public int precio;
-	public int registro;
+	 String color;
+	 int precio;
+	 int registro;
 	
-	public void cambiarcolor (String color) {
+	 void cambiaCcolor (String color) {
 		if (color == "rojo" || color == "verde" || color == "amarillo" || color == "negro" || color == "blanco") {
 			this.color=color;
 		}
