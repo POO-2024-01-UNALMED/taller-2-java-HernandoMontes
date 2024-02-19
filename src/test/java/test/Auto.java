@@ -1,5 +1,5 @@
 package test;
-public class Auto {
+public class Auto{
 	 String modelo;
 	 int precio;
 	 Asiento[] asientos;
@@ -8,13 +8,12 @@ public class Auto {
 	 int registro;
 	 static int cantidadCreados;
 	
-	 int cantidadAsientos() {
-		
+	 int cantidadAsientos(){
 		int suma = 0;
 		
-		for (int i = 0; i < asientos.length; i++) {
+		for (int i=0; i < asientos.length ; i++) {
 			
-			if (asientos[i] != null) {
+			if (asientos[i] !=null) {
 				
 				suma++;
 			}
@@ -26,11 +25,11 @@ public class Auto {
 	
 	 String verificarIntegridad() {
 	    
-	        if (registro == this.motor.registro) {
+	        if (registro==this.motor.registro) {
 	        
-	            for (int n = 0; n < asientos.length; n++){
+	            for (int n =0; n<asientos.length; n++){
 	            
-	                if (asientos[n] !=null) {
+	                if (asientos[n]!=null) {
 	                
 	                    if (asientos[n].registro!=this.registro) {
 	                    
