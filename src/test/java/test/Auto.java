@@ -1,27 +1,27 @@
 package test;
 
 public class Auto {
-	public String modelo;
-	public int precio;
-	public Asiento[] asientos;
-	public String marca;
-	public Motor motor;
-	public int registro;
-	public static int cantidadCreados;
+	 String modelo;
+	 int precio;
+	 Asiento[] asientos;
+	 String marca;
+	 Motor motor;
+	 int registro;
+	 static int cantidadCreados;
 	
-	public int cantidadAsientos() {
+	 int cantidadAsientos() {
 		
-		int cantAsientos = 0;
+		int suma = 0;
 		
-		for (int i = 0; i < this.asientos.length; i++) {
+		for (int i = 0; i < asientos.length; i++) {
 			
-			if (this.asientos[i] != null) {
+			if (asientos[i] != null) {
 				
-				cantAsientos++;
+				suma++;
 			}
 		}
 		
-		return cantAsientos;
+		return suma;
 		
 	}
 	
@@ -29,9 +29,9 @@ public class Auto {
 	    
 	        if (registro == this.motor.registro) {
 	        
-	            for (int n = 0; n < this.asientos.length; n++){
+	            for (int n = 0; n < asientos.length; n++){
 	            
-	                if (this.asientos[n] !=null) {
+	                if (asientos[n] !=null) {
 	                
 	                    if (asientos[n].registro!=this.registro) {
 	                    
